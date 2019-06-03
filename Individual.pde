@@ -6,12 +6,7 @@ class Individual {
 
     public ArrayList<Box> chromosome = new ArrayList<Box>();
 
-    Individual() {
-        Random sizes = new Random();
-        for(int i=101; i<140;i++){
-            chromosome.add(new Box(sizes.nextInt(4)+3,sizes.nextInt(4)+3,sizes.nextInt(4)+3, i));
-        }
-        /*chromosome.add(new Box(4, 6, 2, 101));
+        chromosome.add(new Box(4, 6, 2, 101));
         chromosome.add(new Box(3, 4, 3, 102));
         chromosome.add(new Box(4, 6, 5, 103));
         chromosome.add(new Box(6, 3, 4, 104));
@@ -41,7 +36,7 @@ class Individual {
         chromosome.add(new Box(4, 3, 5, 128));
         chromosome.add(new Box(4, 5, 5, 129));
         chromosome.add(new Box(6, 3, 3, 130));
-       */ 
+     
         Collections.shuffle(chromosome);
     }
 }
